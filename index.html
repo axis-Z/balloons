@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+<template id="__bundler_thumbnail" data-bg-color="#C2C6C9">
+  <svg viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+    <rect width="1200" height="800" fill="#C2C6C9"/>
+    <path d="M250,250 C400,215 560,235 700,300 C820,356 880,470 820,560 C740,676 520,700 370,640 C240,588 200,420 250,250 Z" fill="#A8AD83" stroke="#5E7A6C" stroke-width="7"/>
+    <path d="M700,300 C640,380 560,430 470,470 C400,502 340,560 330,636" fill="none" stroke="#F0F2F4" stroke-width="13"/>
+    <path d="M700,300 C640,380 560,430 470,470 C400,502 340,560 330,636" fill="none" stroke="#24483D" stroke-width="5.5" stroke-dasharray="26 16"/>
+    <circle cx="395" cy="405" r="15" fill="#24483D" stroke="#EDEFF0" stroke-width="6"/>
+    <circle cx="745" cy="520" r="15" fill="#24483D" stroke="#EDEFF0" stroke-width="6"/>
+    <circle cx="418" cy="437" r="11" fill="#A94F4B" stroke="#EDEFF0" stroke-width="4.5"/>
+    <g fill="#E5C47D" stroke="#D5A451" stroke-width="3">
+      <circle cx="640" cy="452" r="21"/>
+      <circle cx="545" cy="392" r="17"/>
+      <circle cx="505" cy="497" r="19"/>
+    </g>
+    <g fill="#4A4A38">
+      <rect x="634" y="474" width="12" height="7" rx="2"/>
+      <rect x="540" y="411" width="10" height="6" rx="2"/>
+      <rect x="499" y="518" width="11" height="7" rx="2"/>
+    </g>
+    <path d="M620,590 L580,603 L589,590 L580,577 Z" fill="#A94F4B"/>
+  </svg>
+</template>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" />
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<style>
+  body { margin: 0; background: #ADB1B5; font-family: 'IBM Plex Sans', system-ui, sans-serif; }
+  a { color: #A94F4B; text-decoration: none; }
+  a:hover { color: #24483D; }
+  @keyframes flow { from { offset-distance: 0%; } to { offset-distance: 100%; } }
+  @keyframes fade { 0% { opacity: 0; } 8% { opacity: 1; } 88% { opacity: 1; } 100% { opacity: 0; } }
+  @keyframes bob { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-5px); } }
+  @keyframes pulsering { 0% { transform: scale(0.3); opacity: 0.85; } 100% { transform: scale(1); opacity: 0; } }
+  @keyframes blip { 0%, 100% { opacity: 0.4; } 50% { opacity: 1; } }
+</style>
+</helmet>
+<div ref="{{ frameRef }}" style="position: relative; width: 1920px; height: 1358px; overflow: hidden; background: #C2C6C9; color: #24483D;">
+
+  <div style="position: absolute; left: 96px; top: 88px; width: 1180px; display: flex; flex-direction: column; gap: 20px;">
+    <div style="display: flex; align-items: center; gap: 16px; font-family: 'IBM Plex Mono', monospace; font-size: 20px; letter-spacing: 0.14em; color: #7E3532;">
+      <span style="width: 34px; height: 1px; background: #7E3532;"></span>
+      <span>Airspace disruption &middot; 2025</span>
+    </div>
+    <h1 style="margin: 0; font-size: 58px; line-height: 1.04; font-weight: 300; letter-spacing: -0.02em; color: #24483D;">Balloons from Belarus</h1>
+  </div>
+
+  <img src="assets/relief-a3.png" alt="Shaded relief of Lithuania and Belarus with the state border" style="position: absolute; left: 44px; top: 286px; display: block; width: 1180px; height: 855px; user-select: none;" />
+
+  <svg viewBox="0 0 1920 1358" style="position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible;">
+    <g fill="none" stroke="#24483D" stroke-opacity="0.8" stroke-width="1.6" stroke-linecap="butt">
+      <path d="M96,1044 L242,1044" />
+      <path d="M96,1037 L96,1051 M169,1039 L169,1049 M242,1037 L242,1051" />
+    </g>
+
+    <sc-if value="{{ showDrones }}" hint-placeholder-val="{{ true }}">
+    </sc-if>
+
+    <g>
+      <circle cx="476" cy="593" r="36" fill="#A94F4B" fill-opacity="0.16" style="transform-origin: 476px 593px; animation: pulsering 3.4s ease-out infinite;" />
+      <circle cx="476" cy="593" r="36" fill="#A94F4B" fill-opacity="0.16" style="transform-origin: 476px 593px; animation: pulsering 3.4s ease-out infinite; animation-delay: -1.7s;" />
+      <circle cx="467" cy="575" r="9" fill="#24483D" stroke="#EDEFF0" stroke-width="3" />
+      <circle cx="688" cy="696" r="9" fill="#24483D" stroke="#EDEFF0" stroke-width="3" />
+      <circle cx="476" cy="593" r="6.5" fill="#A94F4B" stroke="#EDEFF0" stroke-width="2.6" />
+    </g>
+  </svg>
+
+  <div style="position: absolute; left: 0; top: 0; width: 16px; height: 26px; offset-path: path('M682,690 C618,655 556,616 468,576'); offset-rotate: 0deg; animation: flow 21s linear infinite, fade 21s linear infinite;">
+    <div style="width: 100%; height: 100%; animation: bob 3.5s ease-in-out infinite;">
+      <div style="width: 13px; height: 13px; margin: 0 auto; border-radius: 50%; background: radial-gradient(circle at 34% 28%, #E5C47D, #D5A451); box-shadow: 0 0 9px rgba(213, 164, 81, 0.5);"></div>
+      <div style="width: 5px; height: 3px; margin: 2px auto 0; background: #4A4A38;"></div>
+    </div>
+  </div>
+  <div style="position: absolute; left: 0; top: 0; width: 16px; height: 26px; offset-path: path('M682,690 C618,655 556,616 468,576'); offset-rotate: 0deg; animation: flow 21s linear infinite, fade 21s linear infinite; animation-delay: -10.5s;">
+    <div style="width: 100%; height: 100%; animation: bob 4.1s ease-in-out infinite;">
+      <div style="width: 11px; height: 11px; margin: 0 auto; border-radius: 50%; background: radial-gradient(circle at 34% 28%, #E5C47D, #D5A451); box-shadow: 0 0 9px rgba(213, 164, 81, 0.5);"></div>
+      <div style="width: 4px; height: 3px; margin: 2px auto 0; background: #4A4A38;"></div>
+    </div>
+  </div>
+
+  <div style="position: absolute; left: 0; top: 0; width: 16px; height: 26px; offset-path: path('M688,700 C628,688 566,650 480,612'); offset-rotate: 0deg; animation: flow 25s linear infinite, fade 25s linear infinite; animation-delay: -4s;">
+    <div style="width: 100%; height: 100%; animation: bob 3.8s ease-in-out infinite;">
+      <div style="width: 13px; height: 13px; margin: 0 auto; border-radius: 50%; background: radial-gradient(circle at 34% 28%, #E5C47D, #D5A451); box-shadow: 0 0 9px rgba(213, 164, 81, 0.5);"></div>
+      <div style="width: 5px; height: 3px; margin: 2px auto 0; background: #4A4A38;"></div>
+    </div>
+  </div>
+  <div style="position: absolute; left: 0; top: 0; width: 16px; height: 26px; offset-path: path('M688,700 C628,688 566,650 480,612'); offset-rotate: 0deg; animation: flow 25s linear infinite, fade 25s linear infinite; animation-delay: -16s;">
+    <div style="width: 100%; height: 100%; animation: bob 3.2s ease-in-out infinite;">
+      <div style="width: 11px; height: 11px; margin: 0 auto; border-radius: 50%; background: radial-gradient(circle at 34% 28%, #E5C47D, #D5A451); box-shadow: 0 0 9px rgba(213, 164, 81, 0.5);"></div>
+      <div style="width: 4px; height: 3px; margin: 2px auto 0; background: #4A4A38;"></div>
+    </div>
+  </div>
+
+  <div style="position: absolute; left: 0; top: 0; width: 16px; height: 26px; offset-path: path('M678,684 C606,638 542,588 450,550'); offset-rotate: 0deg; animation: flow 23s linear infinite, fade 23s linear infinite; animation-delay: -2s;">
+    <div style="width: 100%; height: 100%; animation: bob 4.3s ease-in-out infinite;">
+      <div style="width: 13px; height: 13px; margin: 0 auto; border-radius: 50%; background: radial-gradient(circle at 34% 28%, #E5C47D, #D5A451); box-shadow: 0 0 9px rgba(213, 164, 81, 0.5);"></div>
+      <div style="width: 5px; height: 3px; margin: 2px auto 0; background: #4A4A38;"></div>
+    </div>
+  </div>
+  <div style="position: absolute; left: 0; top: 0; width: 16px; height: 26px; offset-path: path('M678,684 C606,638 542,588 450,550'); offset-rotate: 0deg; animation: flow 23s linear infinite, fade 23s linear infinite; animation-delay: -13s;">
+    <div style="width: 100%; height: 100%; animation: bob 3.6s ease-in-out infinite;">
+      <div style="width: 13px; height: 13px; margin: 0 auto; border-radius: 50%; background: radial-gradient(circle at 34% 28%, #E5C47D, #D5A451); box-shadow: 0 0 9px rgba(213, 164, 81, 0.5);"></div>
+      <div style="width: 5px; height: 3px; margin: 2px auto 0; background: #4A4A38;"></div>
+    </div>
+  </div>
+
+  <div style="position: absolute; left: 0; top: 0; width: 16px; height: 26px; offset-path: path('M692,706 C636,700 572,676 455,630'); offset-rotate: 0deg; animation: flow 28s linear infinite, fade 28s linear infinite; animation-delay: -6s;">
+    <div style="width: 100%; height: 100%; animation: bob 4.5s ease-in-out infinite;">
+      <div style="width: 13px; height: 13px; margin: 0 auto; border-radius: 50%; background: radial-gradient(circle at 34% 28%, #E5C47D, #D5A451); box-shadow: 0 0 9px rgba(213, 164, 81, 0.5);"></div>
+      <div style="width: 5px; height: 3px; margin: 2px auto 0; background: #4A4A38;"></div>
+    </div>
+  </div>
+  <div style="position: absolute; left: 0; top: 0; width: 16px; height: 26px; offset-path: path('M692,706 C636,700 572,676 455,630'); offset-rotate: 0deg; animation: flow 28s linear infinite, fade 28s linear infinite; animation-delay: -19s;">
+    <div style="width: 100%; height: 100%; animation: bob 3.4s ease-in-out infinite;">
+      <div style="width: 13px; height: 13px; margin: 0 auto; border-radius: 50%; background: radial-gradient(circle at 34% 28%, #E5C47D, #D5A451); box-shadow: 0 0 9px rgba(213, 164, 81, 0.5);"></div>
+      <div style="width: 5px; height: 3px; margin: 2px auto 0; background: #4A4A38;"></div>
+    </div>
+  </div>
+
+  <div style="position: absolute; left: 0; top: 0; width: 16px; height: 26px; offset-path: path('M674,678 C596,618 526,562 428,528'); offset-rotate: 0deg; animation: flow 26s linear infinite, fade 26s linear infinite; animation-delay: -9s;">
+    <div style="width: 100%; height: 100%; animation: bob 3.9s ease-in-out infinite;">
+      <div style="width: 13px; height: 13px; margin: 0 auto; border-radius: 50%; background: radial-gradient(circle at 34% 28%, #E5C47D, #D5A451); box-shadow: 0 0 9px rgba(213, 164, 81, 0.5);"></div>
+      <div style="width: 5px; height: 3px; margin: 2px auto 0; background: #4A4A38;"></div>
+    </div>
+  </div>
+  <div style="position: absolute; left: 0; top: 0; width: 16px; height: 26px; offset-path: path('M674,678 C596,618 526,562 428,528'); offset-rotate: 0deg; animation: flow 26s linear infinite, fade 26s linear infinite; animation-delay: -20s;">
+    <div style="width: 100%; height: 100%; animation: bob 3.3s ease-in-out infinite;">
+      <div style="width: 11px; height: 11px; margin: 0 auto; border-radius: 50%; background: radial-gradient(circle at 34% 28%, #E5C47D, #D5A451); box-shadow: 0 0 9px rgba(213, 164, 81, 0.5);"></div>
+      <div style="width: 4px; height: 3px; margin: 2px auto 0; background: #4A4A38;"></div>
+    </div>
+  </div>
+
+  <div style="position: absolute; left: 0; top: 0; width: 16px; height: 26px; offset-path: path('M688,712 C620,750 524,742 452,586'); offset-rotate: 0deg; animation: flow 24s linear infinite, fade 24s linear infinite; animation-delay: -3s;">
+    <div style="width: 100%; height: 100%; animation: bob 3.7s ease-in-out infinite;">
+      <div style="width: 12px; height: 12px; margin: 0 auto; border-radius: 50%; background: radial-gradient(circle at 34% 28%, #E5C47D, #D5A451); box-shadow: 0 0 9px rgba(213, 164, 81, 0.5);"></div>
+      <div style="width: 5px; height: 3px; margin: 2px auto 0; background: #4A4A38;"></div>
+    </div>
+  </div>
+  <div style="position: absolute; left: 0; top: 0; width: 16px; height: 26px; offset-path: path('M694,720 C628,758 532,748 460,596'); offset-rotate: 0deg; animation: flow 27s linear infinite, fade 27s linear infinite; animation-delay: -12s;">
+    <div style="width: 100%; height: 100%; animation: bob 4.2s ease-in-out infinite;">
+      <div style="width: 13px; height: 13px; margin: 0 auto; border-radius: 50%; background: radial-gradient(circle at 34% 28%, #E5C47D, #D5A451); box-shadow: 0 0 9px rgba(213, 164, 81, 0.5);"></div>
+      <div style="width: 5px; height: 3px; margin: 2px auto 0; background: #4A4A38;"></div>
+    </div>
+  </div>
+  <div style="position: absolute; left: 0; top: 0; width: 16px; height: 26px; offset-path: path('M682,706 C622,740 516,734 446,578'); offset-rotate: 0deg; animation: flow 22s linear infinite, fade 22s linear infinite; animation-delay: -7s;">
+    <div style="width: 100%; height: 100%; animation: bob 3.4s ease-in-out infinite;">
+      <div style="width: 11px; height: 11px; margin: 0 auto; border-radius: 50%; background: radial-gradient(circle at 34% 28%, #E5C47D, #D5A451); box-shadow: 0 0 9px rgba(213, 164, 81, 0.5);"></div>
+      <div style="width: 4px; height: 3px; margin: 2px auto 0; background: #4A4A38;"></div>
+    </div>
+  </div>
+
+  <sc-if value="{{ showDrones }}" hint-placeholder-val="{{ true }}">
+    <div style="position: absolute; left: 0; top: 0; width: 14px; height: 14px; offset-path: path('M700,692 L500,590'); offset-rotate: auto; animation: flow 8s linear infinite, fade 8s linear infinite; animation-delay: -2s;">
+      <div style="width: 0; height: 0; border-left: 14px solid #A94F4B; border-top: 5.5px solid transparent; border-bottom: 5.5px solid transparent; filter: drop-shadow(0 1px 3px rgba(36, 72, 61, 0.45));"></div>
+    </div>
+    <div style="position: absolute; left: 0; top: 0; width: 14px; height: 14px; offset-path: path('M706,706 L492,624'); offset-rotate: auto; animation: flow 10s linear infinite, fade 10s linear infinite; animation-delay: -6.5s;">
+      <div style="width: 0; height: 0; border-left: 14px solid #A94F4B; border-top: 5.5px solid transparent; border-bottom: 5.5px solid transparent; filter: drop-shadow(0 1px 3px rgba(36, 72, 61, 0.45));"></div>
+    </div>
+    <div style="position: absolute; left: 0; top: 0; width: 14px; height: 14px; offset-path: path('M694,676 L476,558'); offset-rotate: auto; animation: flow 9s linear infinite, fade 9s linear infinite; animation-delay: -4s;">
+      <div style="width: 0; height: 0; border-left: 14px solid #A94F4B; border-top: 5.5px solid transparent; border-bottom: 5.5px solid transparent; filter: drop-shadow(0 1px 3px rgba(36, 72, 61, 0.45));"></div>
+    </div>
+  </sc-if>
+
+  <div style="position: absolute; left: 0; top: 526px; width: 448px; text-align: right; font-size: 32px; font-weight: 600; letter-spacing: 0.01em; color: #24483D; text-shadow: 0 0 6px #C2C6C9, 0 0 14px #C2C6C9, 0 0 22px #C2C6C9;">Vilnius</div>
+  <div style="position: absolute; left: 710px; top: 676px; font-size: 32px; font-weight: 600; letter-spacing: 0.01em; color: #24483D; text-shadow: 0 0 6px #C2C6C9, 0 0 14px #C2C6C9, 0 0 22px #C2C6C9;">Minsk</div>
+
+  <div style="position: absolute; left: 150px; top: 604px; display: flex; align-items: center; gap: 9px; padding: 7px 13px 7px 11px; background: #A94F4B; color: #FFFFFF; font-family: 'IBM Plex Mono', monospace; font-size: 19px; letter-spacing: 0.09em; white-space: nowrap;">
+    <span style="width: 9px; height: 9px; border-radius: 50%; background: #FFFFFF; animation: blip 2s ease-in-out infinite;"></span>
+    <span>VNO &mdash; 14 CLOSURES</span>
+  </div>
+
+  <div style="position: absolute; left: 150px; top: 420px; font-size: 23px; font-weight: 500; letter-spacing: 0.36em; color: #24483D; text-shadow: 0 0 6px #C2C6C9, 0 0 14px #C2C6C9, 0 0 22px #C2C6C9;">LITHUANIA</div>
+  <div style="position: absolute; left: 760px; top: 872px; font-size: 23px; font-weight: 500; letter-spacing: 0.36em; color: #24483D; text-shadow: 0 0 6px #C2C6C9, 0 0 14px #C2C6C9, 0 0 22px #C2C6C9;">BELARUS</div>
+  <div style="position: absolute; left: 96px; top: 1056px; width: 146px; display: flex; justify-content: space-between; font-family: 'IBM Plex Mono', monospace; font-size: 16px; letter-spacing: 0.06em; color: #3A4238;">
+    <span>0</span>
+    <span>100 km</span>
+  </div>
+
+  <div style="position: absolute; left: 1250px; top: 286px; width: 574px; display: flex; flex-direction: column; gap: 16px;">
+    <p style="margin: 0; font-size: 22px; line-height: 1.45; color: #333B33; text-align: justify; hyphens: auto;">Smuggling balloons launched from Belarus drift west into Lithuania, carrying contraband cigarettes. They enter controlled airspace unannounced and at unpredictable altitude. Most drift over border districts, but when their tracks cross the approach to Vilnius airport, traffic is suspended until the airspace is clear.</p>
+    <p style="margin: 0; font-size: 22px; line-height: 1.45; color: #333B33; text-align: justify; hyphens: auto;">Drones cross the same corridor far less often, but fly a directed course. Repeated incursions prompted a 90 km no-fly zone along the border in August 2025, and one drone that came down inside Lithuania was carrying an explosive device.</p>
+    <div style="display: flex; flex-direction: column; margin-top: 2px;">
+      <div style="display: grid; grid-template-columns: 1fr; gap: 9px; padding: 13px 0 14px; border-top: 2px solid rgba(36, 72, 61, 0.55);">
+        <span style="display: flex; align-items: baseline; gap: 14px; color: #24483D;">
+          <span style="font-size: 46px; font-weight: 500; letter-spacing: -0.02em; line-height: 1; opacity: 0.72;">226</span>
+          <span style="font-size: 26px; line-height: 1; opacity: 0.4;">&rarr;</span>
+          <span style="font-size: 58px; font-weight: 600; letter-spacing: -0.03em; line-height: 1;">623</span>
+        </span>
+        <span style="font-size: 21px; line-height: 1.32; color: #333B33;">contraband balloons recovered in Lithuania in 2024 and 2025 (State Border Guard Service, 2025 figure to 8 December)</span>
+      </div>
+      <div style="display: grid; grid-template-columns: 152px 1fr; gap: 20px; align-items: baseline; padding: 10px 0; border-top: 1px solid rgba(36, 72, 61, 0.3);">
+        <span style="font-size: 38px; font-weight: 500; letter-spacing: -0.02em; line-height: 1; color: #24483D;">315</span>
+        <span style="font-size: 21px; line-height: 1.32; color: #333B33;">airspace incursions from Belarus between June and December 2025, peaking at 71 in October</span>
+      </div>
+      <div style="display: grid; grid-template-columns: 152px 1fr; gap: 20px; align-items: baseline; padding: 10px 0; border-top: 1px solid rgba(36, 72, 61, 0.3);">
+        <span style="font-size: 38px; font-weight: 500; letter-spacing: -0.02em; line-height: 1; color: #A94F4B;">15</span>
+        <span style="font-size: 21px; line-height: 1.32; color: #333B33;">closures of Vilnius (14) and Kaunas (1) airports, October to December 2025</span>
+      </div>
+      <div style="display: grid; grid-template-columns: 152px 1fr; gap: 20px; align-items: baseline; padding: 10px 0; border-top: 1px solid rgba(36, 72, 61, 0.3);">
+        <span style="font-size: 38px; font-weight: 500; letter-spacing: -0.02em; line-height: 1; color: #A94F4B;">51,000</span>
+        <span style="font-size: 21px; line-height: 1.32; color: #333B33;">passengers and 350+ flights affected, with Vilnius airport shut for more than 60 hours</span>
+      </div>
+      <div style="display: grid; grid-template-columns: 152px 1fr; gap: 20px; align-items: baseline; padding: 10px 0; border-top: 1px solid rgba(36, 72, 61, 0.3); border-bottom: 1px solid rgba(36, 72, 61, 0.3);">
+        <span style="font-size: 38px; font-weight: 500; letter-spacing: -0.02em; line-height: 1; color: #A94F4B;">&euro;800k+</span>
+        <span style="font-size: 21px; line-height: 1.32; color: #333B33;">losses to Lithuanian Airports and partners</span>
+      </div>
+    </div>
+  </div>
+
+  <div style="position: absolute; left: 96px; top: 1158px; display: flex; align-items: center; gap: 34px; font-size: 21px; color: #333B33;">
+    <span style="display: flex; align-items: center; gap: 12px;">
+      <span style="display: flex; flex-direction: column; width: 13px;">
+        <span style="display: block; width: 13px; height: 13px; border-radius: 50%; background: radial-gradient(circle at 34% 28%, #E5C47D, #D5A451);"></span>
+        <span style="display: block; width: 5px; height: 3px; margin: 2px auto 0; background: #4A4A38;"></span>
+      </span>
+      <span>Smuggling balloon</span>
+    </span>
+    <span style="display: flex; align-items: center; gap: 12px;">
+      <span style="display: block; width: 0; height: 0; border-right: 14px solid #A94F4B; border-top: 5.5px solid transparent; border-bottom: 5.5px solid transparent; filter: drop-shadow(0 1px 3px rgba(36, 72, 61, 0.45));"></span>
+      <span>Drone</span>
+    </span>
+    <span style="display: flex; align-items: center; gap: 12px;">
+      <span style="display: flex; align-items: center; justify-content: center; width: 38px; height: 9px; background: rgba(240, 242, 244, 0.95);">
+        <span style="display: block; width: 38px; height: 0; border-top: 3.8px dashed #24483D;"></span>
+      </span>
+      <span>State border</span>
+    </span>
+    <span style="display: flex; align-items: center; gap: 14px;">
+      <span style="display: block; width: 15px; height: 15px; border-radius: 50%; background: #24483D; box-shadow: 0 0 0 3px #EDEFF0;"></span>
+      <span>Capital city and its municipal area</span>
+    </span>
+    <span style="display: flex; align-items: center; gap: 12px;">
+      <span style="display: block; width: 13px; height: 13px; border-radius: 50%; background: #A94F4B; box-shadow: 0 0 0 2.6px #EDEFF0;"></span>
+      <span>Vilnius airport</span>
+    </span>
+  </div>
+
+  <img src="assets/zaxis-logo.svg" alt="Z.axis" style="position: absolute; right: 96px; top: 1226px; width: 212px; opacity: 0.92; user-select: none;" />
+
+  <div style="position: absolute; left: 96px; top: 1194px; width: 1380px; font-family: 'IBM Plex Mono', monospace; font-size: 17px; line-height: 1.7; letter-spacing: 0.01em; color: #4C544A;"><span style="color: #454C42; font-weight: 500;">Relief</span> <span style="color: #4C544A;">OpenTopography</span> &nbsp;&middot;&nbsp; <span style="color: #454C42; font-weight: 500;">National boundaries</span> <span style="color: #4C544A;">GADM</span> &nbsp;&middot;&nbsp; <span style="color: #454C42; font-weight: 500;">City and airport outlines</span> <span style="color: #4C544A;">&copy; OpenStreetMap</span><br /><span style="color: #454C42; font-weight: 500;">Trajectories</span> <span style="color: #4C544A;">schematic, not recorded paths</span> &nbsp;&middot;&nbsp; <span style="color: #454C42; font-weight: 500;">Projection</span> <span style="color: #4C544A;">ETRS89 / TM Baltic93 (EPSG:25884)</span><br /><span style="display: block; margin-top: 9px; max-width: 1088px; font-family: 'IBM Plex Sans', sans-serif; font-size: 17px; line-height: 1.45; letter-spacing: 0; color: #4C544A;">Reported counts compiled from LRT, the State Border Guard Service (VSAT), the National Crisis Management Centre, Lithuanian Airports, Reuters and RFE/RL, among others. No consolidated official statistics exist; these numbers are drawn from news reporting and are approximate. Actual totals are likely higher.</span></div>
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:1920,&quot;height&quot;:1358},&quot;showDrones&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Layers&quot;},&quot;stillFrame&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:false,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Motion&quot;},&quot;flightSpeed&quot;:{&quot;editor&quot;:&quot;range&quot;,&quot;default&quot;:1,&quot;min&quot;:0.3,&quot;max&quot;:2.5,&quot;step&quot;:0.1,&quot;tsType&quot;:&quot;number&quot;,&quot;section&quot;:&quot;Motion&quot;}}">
+class Component extends DCLogic {
+  constructor(props) {
+    super(props);
+    this.frameRef = React.createRef();
+  }
+  applyMotion() {
+    const el = this.frameRef.current;
+    if (!el) return;
+    const sp = this.props.flightSpeed ?? 1;
+    const still = this.props.stillFrame ?? false;
+    el.querySelectorAll('*').forEach(node => {
+      const cs = getComputedStyle(node);
+      if (!cs.animationName || cs.animationName === 'none') return;
+      if (!node.dataset.baseDur) node.dataset.baseDur = cs.animationDuration;
+      if (!node.dataset.baseDelay) node.dataset.baseDelay = cs.animationDelay;
+      const scale = v => v.split(',').map(p => {
+        const n = parseFloat(p);
+        return isNaN(n) ? p : (n / sp).toFixed(3) + 's';
+      }).join(',');
+      node.style.animationDuration = scale(node.dataset.baseDur);
+      node.style.animationDelay = scale(node.dataset.baseDelay);
+      node.style.animationPlayState = still ? 'paused' : 'running';
+    });
+  }
+  componentDidMount() { this.applyMotion(); }
+  componentDidUpdate() { this.applyMotion(); }
+  renderVals() {
+    return {
+      frameRef: this.frameRef,
+      showDrones: this.props.showDrones ?? true
+    };
+  }
+}
+
+</script>
+</body>
+</html>
